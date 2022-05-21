@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Assignment1</string>
+    <string name="buttonL">Learn</string>
+    <string name="buttonT">Test Yourself</string>
+    <string name="buttonR">Repository</string>
+    <string name="text">Learn The Alphabets</string>
+</resources>
