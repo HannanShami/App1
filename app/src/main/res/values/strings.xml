@@ -4,4 +4,5 @@
     <string name="buttonT">Test Yourself</string>
     <string name="buttonR">Repository</string>
     <string name="text">Learn The Alphabets</string>
+    <string name="question">Select the letter it starts with</string>
 </resources>
