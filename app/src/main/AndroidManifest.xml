@@ -10,6 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Assignment1">
         <activity
+            android:name=".Question5"
+            android:exported="false" />
+        <activity
+            android:name=".Question4"
+            android:exported="false" />
+        <activity
+            android:name=".Question3"
+            android:exported="false" />
+        <activity
+            android:name=".Question2"
+            android:exported="false" />
+        <activity
+            android:name=".Question1"
+            android:exported="false" />
+        <activity
             android:name=".ImageShow"
             android:exported="false" />
         <activity
