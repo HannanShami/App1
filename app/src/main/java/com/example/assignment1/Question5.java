@@ -34,8 +34,6 @@ public class Question5 extends AppCompatActivity {
             public void onClick(View view) {
                 alertDialog.setMessage("Congratulations!! You completed the test.");
                 alertDialog.show();
-                Intent intent=new Intent(Question5.this,MainActivity.class);
-                startActivity(intent);
             }
         });
 
