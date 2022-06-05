@@ -1,6 +1,8 @@
 package com.example.assignment1;
 
 import android.content.Context;
+import android.content.Intent;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -27,11 +29,7 @@ public class MyAdapter extends ArrayAdapter<Alphabets> {
 
         t1.setText((s.getName()));
         iv.setImageResource(s.getImageID());
-
         return convertView;
     }
-
-
-
 
 }
