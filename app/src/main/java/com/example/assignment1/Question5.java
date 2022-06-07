@@ -3,6 +3,7 @@ package com.example.assignment1;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -25,14 +26,22 @@ public class Question5 extends AppCompatActivity {
         imageView.setImageResource(R.drawable.yacht);
 
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
-        AlertDialog alertDialog = alertDialogBuilder.create();
-        alertDialog.setMessage("Wrong Answer!");
 
 
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                alertDialog.setMessage("Congratulations!! You completed the test.");
+                alertDialogBuilder.setTitle("Congratulations!!");
+                alertDialogBuilder.setMessage("Test Completed, Press OK to go back to home.");
+                alertDialogBuilder.setCancelable(false);
+                alertDialogBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        Intent intent = new Intent(Question5.this,MainActivity.class);
+                        startActivity(intent);
+                    }
+                });
+                AlertDialog alertDialog = alertDialogBuilder.create();
                 alertDialog.show();
             }
         });
@@ -40,7 +49,8 @@ public class Question5 extends AppCompatActivity {
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                AlertDialog alertDialog = alertDialogBuilder.create();
+                alertDialogBuilder.setMessage("Wrong!! Try Again.");
                 alertDialog.show();
             }
         });
@@ -48,7 +58,8 @@ public class Question5 extends AppCompatActivity {
         btn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                AlertDialog alertDialog = alertDialogBuilder.create();
+                alertDialogBuilder.setMessage("Wrong!! Try Again.");
                 alertDialog.show();
             }
         });
@@ -56,7 +67,8 @@ public class Question5 extends AppCompatActivity {
         btn4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                AlertDialog alertDialog = alertDialogBuilder.create();
+                alertDialogBuilder.setMessage("Wrong!! Try Again.");
                 alertDialog.show();
             }
         });

@@ -26,8 +26,6 @@ public class Question1 extends AppCompatActivity {
 
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
         AlertDialog alertDialog = alertDialogBuilder.create();
-        alertDialog.setMessage("Wrong Answer!");
-
 
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
